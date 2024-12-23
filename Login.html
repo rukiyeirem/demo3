@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ff6f99;
+        }
+        
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            display: flex;
+            flex-direction: row;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 70%;
+            max-width: 1000px;
+        }
+
+        .form-container {
+            padding: 40px;
+            width: 50%;
+        }
+
+        .form-container h2 {
+            margin-bottom: 10px;
+            color: #5e5e5e;
+            font-size: 28px;
+        }
+
+        .form-container p {
+            margin-bottom: 20px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .input-field label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .remember-me {
+            margin-bottom: 20px;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color:  #ff6f999e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color:  #ff6f99;
+        }
+
+
+
+        .form-container a {
+            color:  #ff6f99;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; 
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="form-container">
+                <h2>Welcome</h2>
+                <p>"Please enter your login details."</p>
+                <form action="../login.php" method="POST">
+                    <label for="email">Username:</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input class="form-control" type="password" id="password" name="password" required>
+                    <br>
+                    <button class="btn btn-success" type="submit">Log In</button>
+            </div>
+            <div class="image-container">
+                <img src="files/panel.png" alt="Login Görseli">
+            </div>
+        </div>
+    </div>
+</body>
+
+  </body>
+</html>
